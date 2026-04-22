@@ -243,7 +243,7 @@ p{
     box-shadow: 10px 10px 8px rgba(143, 143, 143, 0.331);
 }
 .feature-one{
-    background-image: url("../images/strategy\ \(1\).webp");
+    background-image: url("../images/strategy.webp");
     min-height: 400px;
     width: 100%;
     background-size: cover;
@@ -256,7 +256,7 @@ p{
 }
 
 .feature-two{
-    background-image: url("../images/user (1).webp");
+    background-image: url("../images/user.webp");
     min-height: 400px;
     width: 100%;
     background-size: cover;
@@ -268,7 +268,7 @@ p{
 }
 
 .feature-three{
-    background-image: url("../images/execution (1).webp");
+    background-image: url("../images/execution.webp");
     min-height: 400px;
     width: 100%;
     background-size: cover;
