@@ -1,0 +1,438 @@
+.contact-section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #efefef;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 70px 50px;
+    box-sizing: border-box;
+}
+
+.contact-left{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 10px;
+}
+
+.contact-left h1{
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.05;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    max-width: 700px;
+}
+
+.contact-left p{
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: rgb(110, 110, 110);
+    max-width: 520px;
+}
+
+.contact-right{
+    width: 52%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form{
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    border-radius: 12px;
+    padding: 35px 35px 30px 35px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.form-row{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.form-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label{
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 14px;
+    font-weight: 400;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(225, 225, 225);
+    background-color: transparent;
+    padding: 10px 0 14px 0;
+    font-size: 1rem;
+    color: rgb(70, 70, 70);
+    outline: none;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+    color: rgb(180, 180, 180);
+}
+
+.form-group select{
+    color: rgb(180, 180, 180);
+    cursor: pointer;
+}
+
+.form-group textarea{
+    resize: none;
+    min-height: 170px;
+    padding-top: 8px;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.contact-btn{
+    width: 100%;
+    padding: 22px 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+
+.contact-btn:hover{
+    opacity: 0.9;
+}
+
+.faq-section{
+    width: 100%;
+    background-color: #efefef;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 70px;
+    padding: 70px 45px;
+    box-sizing: border-box;
+}
+
+.faq-left{
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.faq-left h1{
+    font-size: 4.2rem;
+    font-weight: 500;
+    line-height: 1.05;
+    color: black;
+    margin-bottom: 25px;
+    max-width: 620px;
+}
+
+.faq-left p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: rgb(95, 95, 95);
+    max-width: 550px;
+    margin-bottom: 35px;
+}
+
+.faq-buttons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.faq-cta{
+    background-color: var(--morange);
+    color: white;
+    border: none;
+    border-radius: 40px;
+    padding: 18px 28px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.faq-link{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.faq-right{
+    width: 54%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.faq-item{
+    width: 100%;
+    border-top: 1px solid rgb(210, 210, 210);
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.faq-item:last-child{
+    border-bottom: 1px solid rgb(210, 210, 210);
+}
+
+.faq-question{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 26px 0;
+    cursor: pointer;
+}
+
+.faq-question h3{
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    margin: 0;
+    max-width: 85%;
+}
+
+.faq-icon{
+    min-width: 32px;
+    min-height: 32px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    transition: 0.3s;
+}
+
+.faq-answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+    padding-right: 55px;
+}
+
+.faq-answer p{
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgb(100, 100, 100);
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.faq-item.active .faq-answer{
+    max-height: 220px;
+    padding-bottom: 24px;
+}
+
+.faq-item.active .faq-icon i{
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 1100px){
+    .faq-left h1{
+        font-size: 3.4rem;
+    }
+
+    .faq-left p{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .faq-section{
+        flex-direction: column;
+        gap: 45px;
+        padding: 50px 25px;
+    }
+
+    .faq-left,
+    .faq-right{
+        width: 100%;
+    }
+
+    .faq-left h1{
+        font-size: 3rem;
+        max-width: 100%;
+    }
+
+    .faq-left p{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .faq-section{
+        padding: 40px 20px;
+    }
+
+    .faq-left h1{
+        font-size: 2.4rem;
+        line-height: 1.15;
+    }
+
+    .faq-left p{
+        font-size: 1rem;
+    }
+
+    .faq-buttons{
+        gap: 16px;
+    }
+
+    .faq-cta{
+        padding: 16px 24px;
+        font-size: 1rem;
+    }
+
+    .faq-link{
+        font-size: 1rem;
+    }
+
+    .faq-question{
+        padding: 22px 0;
+        align-items: flex-start;
+    }
+
+    .faq-question h3{
+        font-size: 1.05rem;
+        max-width: 82%;
+    }
+
+    .faq-answer{
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .faq-left h1{
+        font-size: 2rem;
+    }
+
+    .faq-left p{
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .faq-question h3{
+        font-size: 0.98rem;
+    }
+
+    .faq-icon{
+        min-width: 28px;
+        min-height: 28px;
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .contact-left h1{
+        font-size: 3.6rem;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .contact-section{
+        flex-direction: column;
+        gap: 40px;
+        padding: 50px 30px;
+    }
+
+    .contact-left,
+    .contact-right{
+        width: 100%;
+    }
+
+    .contact-left h1{
+        font-size: 3rem;
+        max-width: 100%;
+    }
+
+    .contact-left p{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .contact-section{
+        padding: 40px 20px;
+    }
+
+    .contact-form{
+        padding: 25px 20px;
+        border-radius: 10px;
+    }
+
+    .form-row{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .contact-left h1{
+        font-size: 2.4rem;
+        line-height: 1.15;
+    }
+
+    .contact-left p{
+        font-size: 1.05rem;
+    }
+
+    .contact-btn{
+        padding: 18px 16px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .contact-left h1{
+        font-size: 2rem;
+    }
+
+    .contact-left p{
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .form-group label{
+        font-size: 0.95rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea{
+        font-size: 0.95rem;
+    }
+}

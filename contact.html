@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 </head>
@@ -26,6 +27,196 @@
             <a href="contact.html" id="cta">Contact Me</a>
         </div>
     </div>
+
+    <div class="contact-section">
+    <div class="contact-left">
+        <div class="smtopic">
+            <p><i class="fa-solid fa-circle" style="color: var(--morange);"></i>
+            &nbsp;Get in touch</p>
+        </div>
+
+        <h1>I’d love to hear about your upcoming project.</h1>
+        <p>
+            Fill out the form and I’ll get back to you quickly, ready to assist and bring your ideas to life.
+        </p>
+    </div>
+
+    <div class="contact-right">
+        <form class="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="James Edward*" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Company Name</label>
+                    <input type="text" id="company" placeholder="Company...">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="jamesedward@gmail.com*" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Choose Service</label>
+                    <select id="service" required>
+                        <option value="" selected disabled>Select your service*</option>
+                        <option value="uiux">UI/UX Design</option>
+                        <option value="webdesign">Web Design</option>
+                        <option value="development">Web Development</option>
+                        <option value="seo">SEO Optimization</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="budget">Select Budget</label>
+                    <select id="budget" required>
+                        <option value="" selected disabled>Select your budget*</option>
+                        <option value="500">Below $500</option>
+                        <option value="1000">$500 - $1000</option>
+                        <option value="2500">$1000 - $2500</option>
+                        <option value="5000">$2500+</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="timeline">Your timeline</label>
+                    <select id="timeline" required>
+                        <option value="rush">Rush Project</option>
+                        <option value="1week">Within 1 Week</option>
+                        <option value="2weeks">Within 2 Weeks</option>
+                        <option value="1month">Within 1 Month</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="details">Project Details</label>
+                <textarea id="details" rows="7" placeholder="Tell me about your project, goals, and what you're looking to build."></textarea>
+            </div>
+
+            <button type="submit" class="contact-btn">Start My Project</button>
+        </form>
+    </div>
+</div>
+
+<div class="faq-section">
+    <div class="faq-left">
+        <h1>I answer your most asked questions</h1>
+        <p>
+            Discover exact details regarding my workflow, design process, development approach,
+            SEO strategy, and how I work with brands to build experiences that perform.
+        </p>
+
+        <div class="faq-buttons">
+            <button class="faq-cta">Start your project</button>
+            <a href="#" class="faq-link">See Projects <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <div class="faq-right">
+        <div class="faq-item active">
+            <div class="faq-question">
+                <h3>How long does a UI/UX and website project usually take?</h3>
+                <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-answer">
+                <p>
+                    The timeline depends on the project scope. A landing page or small website can usually be completed
+                    faster, while full UI/UX systems, custom web development, and SEO implementation may take several weeks.
+                    I always define the timeline clearly before the project starts.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>Do you work on both design and development?</h3>
+                <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-answer">
+                <p>
+                    Yes. I handle UI/UX design, modern website design, and front-end development. This helps keep the
+                    visual quality, user experience, and final implementation consistent from start to finish.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>Can you improve my current website instead of building a new one?</h3>
+                <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-answer">
+                <p>
+                    Yes. I can redesign selected sections, improve usability, fix layout issues, optimize responsiveness,
+                    and strengthen conversion performance without necessarily rebuilding the entire website.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>What is included in your SEO optimization service?</h3>
+                <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-answer">
+                <p>
+                    SEO work may include on-page optimization, heading structure, metadata, keyword-focused content guidance,
+                    image optimization, page speed improvements, mobile usability improvements, and technical fixes that help
+                    search engines understand your site better.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>Do you make websites responsive for mobile devices?</h3>
+                <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-answer">
+                <p>
+                    Yes. Every website is built to work smoothly across desktop, tablet, and mobile devices. Responsive
+                    design is an essential part of my workflow because user experience and performance must stay strong on every screen size.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>Do you provide revisions during the project?</h3>
+                <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-answer">
+                <p>
+                    Yes. Revisions are included based on the project agreement. I keep communication clear during the
+                    design and development stages so feedback can be applied efficiently without affecting quality.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>Can you help with conversion-focused landing pages?</h3>
+                <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-answer">
+                <p>
+                    Yes. I create landing pages that combine strong UI design, clear user flow, persuasive structure,
+                    and SEO-friendly foundations to help businesses increase engagement, leads, and conversions.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
     <footer class="footer">
   <div class="footer-container">
     <div class="footer-left">
@@ -60,5 +251,6 @@
   </div>
 </footer>
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
 </body>
 </html>

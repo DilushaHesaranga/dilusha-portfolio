@@ -10,3 +10,4 @@ function display_title_01(){
 }
 display_title_01();
 setInterval(display_title_01,4000);
+
