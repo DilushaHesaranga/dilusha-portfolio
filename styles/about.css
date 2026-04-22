@@ -135,7 +135,155 @@ h1,h2,p{
     border-radius: 40px;
     display: block;
 }
+.tech-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+}
 
+.tech-title{
+    max-width: 800px;
+    text-align: center;
+}
+
+.tech-title p{
+    font-size: 2em;
+    font-weight: 500;
+    margin: 0;
+}
+
+.tech-desc{
+    max-width: 760px;
+    text-align: center;
+}
+
+.tech-desc p{
+    font-size: var(--sp);
+    color: var(--darkgrey);
+    margin-top: 1em;
+}
+
+.tech-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 130px);
+    gap: 1.5em;
+    width: 100%;
+    margin: 2.5em 0;
+    justify-content: center;
+}
+
+.tech-card{
+    background-color: white;
+    border-radius: var(--cta-rad);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    height: 130px;
+    width: 130px;
+    border: 1px solid rgba(65, 65, 65, 0.12);
+    box-shadow: 10px 10px 8px rgba(143, 143, 143, 0.150);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.tech-card i{
+    font-size: 2.1em;
+    color: var(--morange);
+}
+
+.tech-card h1{
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0;
+}
+
+.tech-card:hover{
+    transform: translateY(-5px);
+    background-color: var(--morange);
+    color: white;
+    cursor: pointer;
+}
+
+.tech-card:hover i{
+    color: white;
+}
+
+@media (max-width: 1200px){
+    .tech-section{
+        padding: 0 6%;
+    }
+
+    .tech-grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 992px){
+    .tech-section{
+        padding: 0 2em;
+    }
+
+    .tech-title p{
+        font-size: 1.7em;
+    }
+
+    .tech-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .tech-card{
+        min-height: 150px;
+    }
+}
+
+@media (max-width: 768px){
+    .tech-section{
+        padding: 0 1.2em;
+    }
+
+    .tech-title p{
+        font-size: 1.45em;
+    }
+
+    .tech-desc p{
+        font-size: 1em;
+    }
+
+    .tech-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+
+    .tech-card{
+        padding: 1.5em 0.8em;
+        min-height: 140px;
+    }
+
+    .tech-card i{
+        font-size: 2em;
+    }
+
+    .tech-card h1{
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 576px){
+    .tech-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .tech-title p{
+        font-size: 1.25em;
+    }
+
+    .tech-card{
+        min-height: 120px;
+    }
+}
 @media (max-width: 1200px){
     .about-wrapper{
         padding: 1.5em 7% 2.5em 7%;
