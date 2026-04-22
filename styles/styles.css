@@ -239,38 +239,41 @@ p{
     align-items: stretch;
     gap: 2.5em;
 }
-
+.feature-one,.feature-two,.feature-three{
+    box-shadow: 10px 10px 8px rgba(143, 143, 143, 0.331);
+}
 .feature-one{
-    background-image: url(/images/strategy.webp);
+    background-image: url("/images/strategy (1).webp");
     min-height: 400px;
     width: 100%;
     background-size: cover;
     background-position: center;
-    color: white;
+    color: black;
     border-radius: var(--cta-rad);
     align-content: end;
     padding: 1em;
+    
 }
 
 .feature-two{
-    background-image: url(/images/user.webp);
+    background-image: url("/images/user (1).webp");
     min-height: 400px;
     width: 100%;
     background-size: cover;
     background-position: center;
-    color: white;
+    color: black;
     border-radius: var(--cta-rad);
     align-content: end;
     padding: 1em;
 }
 
 .feature-three{
-    background-image: url(/images/execution.webp);
+    background-image: url("/images/execution (1).webp");
     min-height: 400px;
     width: 100%;
     background-size: cover;
     background-position: center;
-    color: white;
+    color: black;
     border-radius: var(--cta-rad);
     align-content: end;
     padding: 1em;

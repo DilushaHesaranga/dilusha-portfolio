@@ -1,0 +1,306 @@
+:root{
+    --morange: rgb(201, 81, 0);
+    --cta-rad: 30px;
+    --darkgrey: rgba(65, 65, 65, 0.863);
+    --grey: rgba(163, 163, 163, 0.117);
+    --p: 1.4em;
+    --sp: 1.2em;
+    --upadding: 0 4em;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-color: var(--grey);
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+h1,h2,p{
+    margin-top: 0;
+}
+
+.about-wrapper{
+    margin-top: 5em;
+    width: 100%;
+    min-height: 100vh;
+    padding: 1.5em 10% 2.5em 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-topic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5em;
+}
+
+.about-topic p{
+    font-size: 1.1em;
+    color: black;
+    margin: 0;
+}
+
+.about-section{
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 4.5em;
+    align-items: start;
+}
+
+.left-about{
+    padding-top: 0.6em;
+}
+
+.left-about h1{
+    font-size: 3.1em;
+    font-weight: 500;
+    line-height: 1.15em;
+    max-width: 650px;
+    margin-bottom: 0.9em;
+    color: black;
+}
+
+.left-about p{
+    font-size: 1.15em;
+    line-height: 1.7em;
+    color: var(--darkgrey);
+    max-width: 720px;
+    margin-bottom: 1.15em;
+}
+
+.left-about h2{
+    font-size: 2.5em;
+    font-weight: 500;
+    line-height: 1.2em;
+    max-width: 620px;
+    margin-top: 1.5em;
+    margin-bottom: 1.2em;
+    color: black;
+}
+
+.about-buttons{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    margin-top: 0.5em;
+}
+
+.cta-about{
+    text-decoration: none;
+    background-color: var(--morange);
+    color: white;
+    padding: 0.9em 1.5em;
+    border-radius: var(--cta-rad);
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-call{
+    text-decoration: none;
+    color: black;
+    font-size: 1.05em;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.right-about{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.right-about img{
+    width: 100%;
+    max-width: 470px;
+    height: 680px;
+    object-fit: cover;
+    border-radius: 40px;
+    display: block;
+}
+
+@media (max-width: 1200px){
+    .about-wrapper{
+        padding: 1.5em 7% 2.5em 7%;
+    }
+
+    .about-section{
+        gap: 3em;
+    }
+
+    .left-about h1{
+        font-size: 2.6em;
+    }
+
+    .left-about h2{
+        font-size: 2.1em;
+    }
+
+    .left-about p{
+        font-size: 1.05em;
+    }
+
+    .right-about img{
+        height: 620px;
+    }
+}
+
+@media (max-width: 992px){
+    .about-wrapper{
+        padding: 2em 5% 3em 5%;
+    }
+
+    .about-section{
+        grid-template-columns: 1fr;
+        gap: 2.5em;
+    }
+
+    .left-about{
+        order: 2;
+        padding-top: 0;
+    }
+
+    .right-about{
+        order: 1;
+        justify-content: flex-start;
+    }
+
+    .right-about img{
+        max-width: 420px;
+        height: 560px;
+    }
+
+    .left-about h1{
+        font-size: 2.3em;
+        max-width: 100%;
+    }
+
+    .left-about h2{
+        font-size: 2em;
+        max-width: 100%;
+    }
+
+    .left-about p{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .about-wrapper{
+        padding: 1.5em 1.2em 2.5em 1.2em;
+    }
+
+    .about-topic{
+        margin-bottom: 2em;
+    }
+
+    .about-section{
+        gap: 2em;
+    }
+
+    .left-about h1{
+        font-size: 2em;
+        line-height: 1.2em;
+    }
+
+    .left-about h2{
+        font-size: 1.8em;
+        line-height: 1.25em;
+        margin-top: 1.3em;
+    }
+
+    .left-about p{
+        font-size: 1em;
+        line-height: 1.65em;
+    }
+
+    .about-buttons{
+        gap: 1.2em;
+    }
+
+    .right-about img{
+        width: 100%;
+        max-width: 100%;
+        height: 500px;
+        border-radius: 30px;
+    }
+}
+
+@media (max-width: 576px){
+    .about-wrapper{
+        padding: 1.2em 1em 2em 1em;
+    }
+
+    .about-topic p{
+        font-size: 1em;
+    }
+
+    .left-about h1{
+        font-size: 1.7em;
+    }
+
+    .left-about h2{
+        font-size: 1.55em;
+    }
+
+    .left-about p{
+        font-size: 0.95em;
+        margin-bottom: 1em;
+    }
+
+    .about-buttons{
+        flex-direction: row;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .cta-about{
+        padding: 0.8em 1.25em;
+        font-size: 0.95em;
+    }
+
+    .book-call{
+        font-size: 0.95em;
+    }
+
+    .right-about img{
+        height: 420px;
+        border-radius: 24px;
+    }
+}
+
+@media (max-width: 420px){
+    .left-about h1{
+        font-size: 1.5em;
+    }
+
+    .left-about h2{
+        font-size: 1.35em;
+    }
+
+    .about-buttons{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .right-about img{
+        height: 360px;
+    }
+}
