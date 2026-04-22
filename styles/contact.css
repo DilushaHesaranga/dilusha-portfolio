@@ -1,3 +1,12 @@
+:root{
+    --morange: rgb(201, 81, 0);
+    --cta-rad:30px;
+    --darkgrey:rgba(65, 65, 65, 0.863);
+    --grey:rgba(163, 163, 163, 0.117);
+    --p:1.4em;
+    --sp:1.2em;
+    --upadding:0 4em;
+}
 .contact-section{
     width: 100%;
     min-height: 100vh;
@@ -123,6 +132,9 @@
 
 .contact-btn:hover{
     opacity: 0.9;
+    background-color: var(--morange);
+    color: white;
+    box-shadow: 10px 10px 8px rgba(143, 143, 143, 0.596);
 }
 
 .faq-section{
@@ -145,7 +157,7 @@
 }
 
 .faq-left h1{
-    font-size: 4.2rem;
+    font-size: 3rem;
     font-weight: 500;
     line-height: 1.05;
     color: black;
@@ -262,7 +274,9 @@
 .faq-item.active .faq-icon i{
     transform: rotate(180deg);
 }
-
+h1{
+    font-weight: 500;
+}
 @media screen and (max-width: 1100px){
     .faq-left h1{
         font-size: 3.4rem;
