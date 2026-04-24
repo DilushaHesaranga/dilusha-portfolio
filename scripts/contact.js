@@ -13,3 +13,9 @@ faqQuestions.forEach((item) => {
         parent.classList.toggle("active");
     });
 });
+
+const Clickbutton = document.getElementById("buttoncontact");
+
+Clickbutton.addEventListener("click",()=>{
+    alert("Thank you for the message. We will be contacting you soon!");
+})
