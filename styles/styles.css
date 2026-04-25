@@ -494,6 +494,94 @@ p{
     justify-content: flex-end;
 }
 
+.project-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    width: 100%;
+    margin-top: 3em;
+}
+
+.project-card{
+    background-color: white;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 18px 35px rgba(0,0,0,0.07);
+    transition: 0.35s ease;
+    border: 1px solid rgba(65, 65, 65, 0.08);
+}
+
+.project-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 24px 45px rgba(0,0,0,0.12);
+}
+
+.project-img{
+    width: 100%;
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+}
+
+.project-img-one{
+    background-image: linear-gradient(135deg, rgba(201,81,0,0.85), rgba(0,0,0,0.55)), url("../images/project-one.webp");
+}
+
+.project-img-two{
+    background-image: linear-gradient(135deg, rgba(0,0,0,0.75), rgba(201,81,0,0.55)), url("../images/project-two.webp");
+}
+
+.project-card-content{
+    padding: 1.5em;
+}
+
+.project-tag{
+    width: fit-content;
+    background-color: var(--grey);
+    color: var(--morange);
+    padding: 0.4em 0.8em;
+    border-radius: var(--cta-rad);
+    font-size: 0.85em;
+    font-weight: 600;
+    margin: 0 0 1em 0;
+}
+
+.project-card-content h2{
+    font-size: 1.45em;
+    line-height: 1.2em;
+    margin: 0 0 0.6em 0;
+    font-weight: 650;
+    color: black;
+}
+
+.project-card-content p{
+    color: var(--darkgrey);
+    line-height: 1.65em;
+    margin-bottom: 1.2em;
+}
+
+.project-link{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    transition: 0.3s ease;
+}
+
+.project-link i{
+    transition: 0.3s ease;
+}
+
+.project-link:hover{
+    color: var(--morange);
+}
+
+.project-link:hover i{
+    transform: translateX(5px);
+}
+
 .services-section{
     width: 100%;
     padding: 0 10% 5em 10%;
@@ -828,6 +916,15 @@ p{
         justify-content: flex-start;
     }
 
+    .project-cards{
+        grid-template-columns: 1fr;
+        margin-top: 2.5em;
+    }
+
+    .project-img{
+        height: 240px;
+    }
+
     .services-section{
         padding: 0 5% 4em 5%;
     }
@@ -1064,6 +1161,27 @@ p{
 
     .des-title p{
         font-size: 0.95em;
+    }
+
+    .project-cards{
+        gap: 1em;
+        margin-top: 2em;
+    }
+
+    .project-card{
+        border-radius: 22px;
+    }
+
+    .project-img{
+        height: 200px;
+    }
+
+    .project-card-content{
+        padding: 1.2em;
+    }
+
+    .project-card-content h2{
+        font-size: 1.2em;
     }
 
     .services-heading h1{
