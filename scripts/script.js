@@ -1,4 +1,10 @@
-let titles = [,];
+let menuIcon = document.querySelector(".menu-icon");
+let mobileLinks = document.querySelector(".nav-links-mobile");
+
+menuIcon.addEventListener("click", function(){
+    mobileLinks.classList.toggle("active");
+});
+
 let hero_title = document.getElementById("hero-title");
 
 function display_title_01(){
