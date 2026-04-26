@@ -189,6 +189,7 @@
     padding: 18px 28px;
     font-size: 1.1rem;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .faq-link{

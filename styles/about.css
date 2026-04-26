@@ -135,28 +135,6 @@ p{
     box-shadow: 0 14px 30px rgba(201, 81, 0, 0.35);
 }
 
-.book-call{
-    text-decoration: none;
-    color: black;
-    font-size: 1.05em;
-    font-weight: 500;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5em;
-    transition: 0.3s ease;
-}
-
-.book-call i{
-    transition: 0.3s ease;
-}
-
-.book-call:hover{
-    color: var(--morange);
-}
-
-.book-call:hover i{
-    transform: translateX(5px);
-}
 
 .right-about{
     display: flex;
